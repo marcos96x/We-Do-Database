@@ -2,6 +2,8 @@ drop database if exists db_we_do;
 create database db_we_do;
 use db_we_do;
 
+set sql_safe_updates = 0;
+
 create table tb_usuario (
 	id_usuario int not null auto_increment,
 	email_usuario varchar(80) not null,
